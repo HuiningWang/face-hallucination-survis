@@ -25,3 +25,5 @@ http://127.0.0.1:8765/
 ```
 
 The root page redirects to `src/index.html`, so the same setup works for local preview and future GitHub Pages deployment.
+
+Or you can directly visit https://huiningwang.github.io/face-hallucination-survis/
