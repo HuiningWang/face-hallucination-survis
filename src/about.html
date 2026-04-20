@@ -1,0 +1,94 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+    html {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        font-family: "Segoe UI", Calibri, Arial, sans-serif;
+        line-height: 1.5;
+        margin: 0px;
+        padding: 24px 28px;
+        color: #1f2933;
+        background: #f8fafc;
+    }
+
+    a {
+        color: #0f5b99;
+    }
+
+    a:active,
+    a:visited {
+        color: #0f5b99;
+    }
+
+    code {
+        font-family: Consolas, "Courier New", monospace;
+        background: #e8eef5;
+        padding: 1px 4px;
+        border-radius: 4px;
+    }
+
+    h1 {
+        font-size: 20pt;
+        margin: 0 0 12px;
+        border-bottom: 1px solid #d7e0ea;
+        padding-bottom: 8px;
+    }
+
+    h2 {
+        font-size: 12pt;
+        margin: 20px 0 8px;
+    }
+
+    p, li {
+        font-size: 11pt;
+    }
+
+    .card {
+        background: white;
+        border: 1px solid #d7e0ea;
+        border-radius: 10px;
+        padding: 16px 18px;
+        margin-bottom: 16px;
+        box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+    }
+
+    .muted {
+        color: #52606d;
+    }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h1>About This Collection</h1>
+    <p>This SurVis site accompanies a COMP4126 Research Methods Coursework 3 literature review on face super-resolution and blind face restoration.</p>
+    <p class="muted">The collection currently includes 16 papers and is organized to support the screenshot and discussion required in Section 3 of the report.</p>
+</div>
+
+<div class="card">
+    <h2>Collection Focus</h2>
+    <ul>
+        <li><strong>Task axis:</strong> face super-resolution, blind face restoration, and face hallucination.</li>
+        <li><strong>Method axis:</strong> attention, GAN, dictionary learning, facial priors, compact models, and reinforcement learning.</li>
+        <li><strong>Evaluation axis:</strong> real-world degradation settings, identity preservation, and face-recognition-oriented evidence.</li>
+    </ul>
+</div>
+
+<div class="card">
+    <h2>Keyword Schema</h2>
+    <p>Representative BibTeX pattern:</p>
+    <p><code>keywords = {task:blind face restoration, method:gan, guidance:facial prior, setting:real-world}</code></p>
+    <p>The tag cloud is driven directly by the <code>keywords</code> field in <code>bib/references.bib</code>, so future edits only need to update the bibliography and rerun <code>python update_data.py --once</code>.</p>
+</div>
+
+<div class="card">
+    <h2>Local Preview</h2>
+    <p>From this folder, run <code>python -m http.server 8765</code> and open <code>http://127.0.0.1:8765/</code>.</p>
+    <p class="muted">The root <code>index.html</code> redirects to <code>src/index.html</code>, matching the structure used in the finished coursework example.</p>
+</div>
+</body>
+</html>
